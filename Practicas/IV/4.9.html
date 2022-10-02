@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicinamiento absoluto</title>
+    <style type="text/css">
+        .imagen_fondo{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index:1 ;
+        }
+        .imagen_primerplano{
+            position: absolute;
+            top: 25px;
+            left: 100px;
+            z-index: 2;
+        }
+        .texto{
+            position: absolute;
+            top: 25px;
+            left: 100px;
+            z-index: 3;
+            font-size: 20pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p><img src="../img/deitel.jpg" class="imagen_fondo" alt="1ra imagen posicinamiento"></p>
+    
+    <p><img src="../img/deitel.jpg" class="imagen_primerplano" alt="2da imagen posicinamiento"></p>
+
+    <p class="texto">Texto posicinado</p>
+</body>
+</html>

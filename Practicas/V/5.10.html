@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borde de imagenes</title>
+    <style type="text/css">
+        div {
+            border-width: 30px;
+            width: 234px;
+            padding: 20px 20px;
+        }
+        #stretch{
+            border: 10px solid transparent;
+            /* padding: 15px; */
+            /* -webkit-border-image: url('../img/marco.png') 80 80 80 80  stretch; */
+            /* -moz-border-image: url(../img/marco.png) 80,80,80,80, stretch; */
+            /* -o-border-image: url(../img/marco.png) 80,80,80,80, stretch; */
+            /* border-image: url('../img/marco.png') 80 80 80 80 stretch; */
+            border-image: url('../img/marco.png') 20% round;
+        }
+        #repeat{
+            border: 10px solid transparent;
+            -webkit-border-image: url(../img/marco.png) 34% 34% repeat;
+            -moz-border-image: url(../img/marco.png) 34% 34% repeat;
+            -o-border-image: url(../img/marco.png) 34% 34% repeat;
+            border-image: url(../img/marco.png) 34% 34% repeat;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bordes de imagen</h2>
+    <img src="../img/marco.png" alt="imagen utilizada para demostrar los bordes">
+    <p><div id="stretch">Se estira al borde de la imagen</div></p>
+    <p><div id="repeat">Se repite el borde de la imagen</div></p>
+</body>
+</html>
