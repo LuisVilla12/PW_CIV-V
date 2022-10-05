@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.9</title>
+    <link rel="stylesheet" href="../../css/btn.css">
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;
+            /* transition: all  ; */
+            position: relative;
+            animation: animacion linear 1s  infinite  alternate-reverse ;
+        }
+        @keyframes animacion {
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 0px;
+                top: 50px;
+            }
+            50%{
+                left: 50px;
+                top: 50px;
+            }
+            75%{
+                left: 50px;
+                top: 0px;
+            }
+            95%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <a class="btn__index" href="../../index.html">Volver a inicio</a>
+</body>
+</html>

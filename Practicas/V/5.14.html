@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusión de imagenes</title>
+    <link rel="stylesheet" href="../../css/btn.css">
     <style type="text/css">
        #portada {
             position: relative;
             margin: 0 auto;
         }
         #portada img{
+            width: 50rem;
+            height: 60rem;
             position: absolute;
             left: 0;
-            -webkit-transition: opacity 4s ease-in-out;
             transition: opacity 4s ease-in-out;
         }
-        #portada img.top:hover{
+        .top:hover{
             opacity: 0;
         }
     </style>
@@ -26,5 +28,6 @@
         <img class="bottom" src="../img/PortadaLibroJava.jpg" alt="Portada de Java 9e">
         <img class="top" src="../img/PortadaLibroC++.jpg" alt="Portada de Java 8e">
     </div>
+    <a class="btn__index" href="../../index.html">Volver a inicio</a>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5.11</title>
+    <link rel="stylesheet" href="../../css/btn.css">
+    <style type="text/css">
+        .skew .textbox{
+            margin-left: 75px;
+            background: lightgreen;
+            height: 100px;
+            width: 200px;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 250%;
+            border: 3px solid darkgreen;
+            border-radius: 15px;
+            animation: skew 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes skew{
+            from {
+                -webkit-transform: skewX(0deg);
+            }
+            13% {
+                -webkit-transform: skewX(45deg);
+            }
+            26% {
+                -webkit-transform: skewX(0deg);
+            }
+            39% {
+                -webkit-transform: skewX(-45deg);
+            }
+            52% {
+                -webkit-transform: skewX(0deg);
+            }
+            65% {
+                -webkit-transform: skewY(30deg);
+            }
+            78% {
+                webkit-transform: skewY(0deg);
+            }
+            90%{
+                webkit-transform: skewY(-30deg);
+            }
+            100%{
+                webkit-transform: skewY(-60deg);
+            }
+            to {
+                webkit-transform: skewY(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box skew">
+        <div class="textbox">Inclinar texto</div>
+    </div>
+    <a class="btn__index" href="../../index.html">Volver a inicio</a>
+</body>
+</html>
