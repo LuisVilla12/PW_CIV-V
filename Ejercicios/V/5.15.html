@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflejo</title>
+    <title>Ejercicio 5.15</title>
     <link rel="stylesheet" href="../../css/btn.css">
     <style type="text/css">
         img {
@@ -12,12 +12,19 @@
         }
         img.below{
             -webkit-box-reflect: right 20px
-            -webkit-gradient(linear, left top, right bottom,from(white), to(transparent));
+            -webkit-gradient(linear, left top, left bottom,
+            from(transparent), to(white));
         }
+        /* img.right{
+            -webkit-box-reflect: right 5px
+            -webkit-gradient(linear, right top, left top,from(transparent), to(white));
+        } */
     </style>
 </head>
 <body>
     <img class="below" src="../../Practicas/img/compu.png" width="138" height="180" alt="Portada del libro Java How to Program">
-    <a class="btn__index" href="../../index.html">Volver a inicio</a>
+    <div style="margin-top: 2rem ;">
+        <a class="btn__index" href="../../index.html">Volver a inicio</a>
+    </div>
 </body>
 </html>
